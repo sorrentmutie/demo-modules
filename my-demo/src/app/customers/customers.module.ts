@@ -13,7 +13,7 @@ import { CustomersService } from "./customers.service";
   exports: [CustomerDetailsComponent],
   providers: [
     ProvaService,
-    { provide: CustomersService, useClass: CustomersService },
+    // { provide: CustomersService, useClass: CustomersService },
   ],
   imports: [CommonModule, CustomersRoutingModule, UtilsModule],
 })

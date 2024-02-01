@@ -1,10 +1,10 @@
-import { Injectable } from "@angular/core";
+import { Inject, Injectable } from "@angular/core";
 
-// @Injectable({
-//   providedIn: 'root'
-// })
+@Injectable({
+  providedIn: "root",
+})
 export class CustomersService {
-  constructor() {}
+  constructor(@Inject("provaInput") private provaInput: string) {}
 
   getText(): string {
     return "CustomersService.getText";

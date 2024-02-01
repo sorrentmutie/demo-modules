@@ -5,7 +5,7 @@ import { CustomersService } from "./customers/customers.service";
 @Component({
   selector: "app-root",
   template: `
-    <h1>Welcome to {{ title | first }}!</h1>
+    <h1>Welcome to {{ title }}!</h1>
 
     <button type="button" routerLink="/customers">Customers</button>
     <button type="button" routerLink="/orders">Orders</button>

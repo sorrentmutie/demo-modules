@@ -21,7 +21,7 @@ import { CustomersService } from "./customers.service";
 
     {{ "Random number in CustomerComponent: " + service.getRandomNumber() }}
   `,
-  //providers: [ProvaService],
+  providers: [{ provide: "provaInput", useValue: "provaInput" }],
   styles: ``,
 })
 export class CustomersComponent {
